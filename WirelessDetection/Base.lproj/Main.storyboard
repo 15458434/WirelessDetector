@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +642,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WirelessDetection" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -667,11 +668,61 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="WirelessDetection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frw-Hp-IB7">
+                                <rect key="frame" x="111" y="114" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xLj-fz-K9b">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7o-lE-Mc1">
+                                <rect key="frame" x="111" y="139" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="rQr-41-c1J">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7w-ee-GtV">
+                                <rect key="frame" x="340" y="139" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="hMc-rq-CNp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6br-TA-5Dc">
+                                <rect key="frame" x="340" y="114" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="gc0-Em-UXU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="o7w-ee-GtV" firstAttribute="centerX" secondItem="6br-TA-5Dc" secondAttribute="centerX" id="4ch-qq-W6s"/>
+                            <constraint firstItem="6br-TA-5Dc" firstAttribute="centerY" secondItem="frw-Hp-IB7" secondAttribute="centerY" id="Kfk-rb-vrG"/>
+                            <constraint firstItem="6br-TA-5Dc" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="100" id="Rh7-5h-MAI"/>
+                            <constraint firstItem="frw-Hp-IB7" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="VVP-mm-AIF"/>
+                            <constraint firstItem="frw-Hp-IB7" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-100" id="ZXU-49-MTK"/>
+                            <constraint firstItem="g7o-lE-Mc1" firstAttribute="centerX" secondItem="frw-Hp-IB7" secondAttribute="centerX" id="dTk-RK-hNR"/>
+                            <constraint firstItem="6br-TA-5Dc" firstAttribute="top" secondItem="o7w-ee-GtV" secondAttribute="bottom" constant="8" id="jAN-sF-qgG"/>
+                            <constraint firstItem="frw-Hp-IB7" firstAttribute="top" secondItem="g7o-lE-Mc1" secondAttribute="bottom" constant="8" id="tsm-g4-bcs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bluetoothLabel" destination="o7w-ee-GtV" id="qET-et-o1O"/>
+                        <outlet property="bluetoothPowerOnValue" destination="6br-TA-5Dc" id="mtu-yD-WQF"/>
+                        <outlet property="wifiLabel" destination="g7o-lE-Mc1" id="TJQ-Fp-nge"/>
+                        <outlet property="wifiPowerOnValue" destination="frw-Hp-IB7" id="fER-xh-DkU"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

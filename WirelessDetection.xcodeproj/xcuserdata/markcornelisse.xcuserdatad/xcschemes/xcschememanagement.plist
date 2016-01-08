@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WirelessDetector.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>38883D841C3ED51200FA8C57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38883D9B1C3ED54300FA8C57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38883DAF1C3EE2D100FA8C57</key>
 		<dict>
 			<key>primary</key>
 			<true/>

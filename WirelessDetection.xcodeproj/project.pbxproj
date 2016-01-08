@@ -11,19 +11,70 @@
 		38883D8B1C3ED51200FA8C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883D8A1C3ED51200FA8C57 /* ViewController.swift */; };
 		38883D8D1C3ED51200FA8C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38883D8C1C3ED51200FA8C57 /* Assets.xcassets */; };
 		38883D901C3ED51200FA8C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38883D8E1C3ED51200FA8C57 /* Main.storyboard */; };
+		38883D9F1C3ED54300FA8C57 /* WirelessDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 38883D9E1C3ED54300FA8C57 /* WirelessDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38883DA31C3ED54300FA8C57 /* WirelessDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */; };
+		38883DA41C3ED54300FA8C57 /* WirelessDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38883DAA1C3ED55D00FA8C57 /* WirelessDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883DA91C3ED55D00FA8C57 /* WirelessDetector.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		38883DA11C3ED54300FA8C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38883D7D1C3ED51200FA8C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38883D9B1C3ED54300FA8C57;
+			remoteInfo = WirelessDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38883DA81C3ED54300FA8C57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38883DA41C3ED54300FA8C57 /* WirelessDetector.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38883DBF1C3EE2D100FA8C57 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		387AB2631C3EF4C200D94D55 /* WirelessDetection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WirelessDetection.entitlements; sourceTree = "<group>"; };
 		38883D851C3ED51200FA8C57 /* WirelessDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WirelessDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38883D881C3ED51200FA8C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38883D8A1C3ED51200FA8C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38883D8C1C3ED51200FA8C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38883D8F1C3ED51200FA8C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38883D911C3ED51200FA8C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirelessDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38883D9E1C3ED54300FA8C57 /* WirelessDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirelessDetector.h; sourceTree = "<group>"; };
+		38883DA01C3ED54300FA8C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38883DA91C3ED55D00FA8C57 /* WirelessDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WirelessDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		38883D821C3ED51200FA8C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38883DA31C3ED54300FA8C57 /* WirelessDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38883D981C3ED54300FA8C57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				38883D871C3ED51200FA8C57 /* WirelessDetection */,
+				38883D9D1C3ED54300FA8C57 /* WirelessDetector */,
 				38883D861C3ED51200FA8C57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				38883D851C3ED51200FA8C57 /* WirelessDetection.app */,
+				38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +105,7 @@
 		38883D871C3ED51200FA8C57 /* WirelessDetection */ = {
 			isa = PBXGroup;
 			children = (
+				387AB2631C3EF4C200D94D55 /* WirelessDetection.entitlements */,
 				38883D881C3ED51200FA8C57 /* AppDelegate.swift */,
 				38883D8A1C3ED51200FA8C57 /* ViewController.swift */,
 				38883D8C1C3ED51200FA8C57 /* Assets.xcassets */,
@@ -61,7 +115,28 @@
 			path = WirelessDetection;
 			sourceTree = "<group>";
 		};
+		38883D9D1C3ED54300FA8C57 /* WirelessDetector */ = {
+			isa = PBXGroup;
+			children = (
+				38883D9E1C3ED54300FA8C57 /* WirelessDetector.h */,
+				38883DA91C3ED55D00FA8C57 /* WirelessDetector.swift */,
+				38883DA01C3ED54300FA8C57 /* Info.plist */,
+			);
+			path = WirelessDetector;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38883D991C3ED54300FA8C57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38883D9F1C3ED54300FA8C57 /* WirelessDetector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		38883D841C3ED51200FA8C57 /* WirelessDetection */ = {
@@ -71,15 +146,36 @@
 				38883D811C3ED51200FA8C57 /* Sources */,
 				38883D821C3ED51200FA8C57 /* Frameworks */,
 				38883D831C3ED51200FA8C57 /* Resources */,
+				38883DA81C3ED54300FA8C57 /* Embed Frameworks */,
+				38883DBF1C3EE2D100FA8C57 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38883DA21C3ED54300FA8C57 /* PBXTargetDependency */,
 			);
 			name = WirelessDetection;
 			productName = WirelessDetection;
 			productReference = 38883D851C3ED51200FA8C57 /* WirelessDetection.app */;
 			productType = "com.apple.product-type.application";
+		};
+		38883D9B1C3ED54300FA8C57 /* WirelessDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38883DA51C3ED54300FA8C57 /* Build configuration list for PBXNativeTarget "WirelessDetector" */;
+			buildPhases = (
+				38883D971C3ED54300FA8C57 /* Sources */,
+				38883D981C3ED54300FA8C57 /* Frameworks */,
+				38883D991C3ED54300FA8C57 /* Headers */,
+				38883D9A1C3ED54300FA8C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WirelessDetector;
+			productName = WirelessDetector;
+			productReference = 38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +189,16 @@
 				TargetAttributes = {
 					38883D841C3ED51200FA8C57 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Z6JP26PUUY;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					38883D9B1C3ED54300FA8C57 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Z6JP26PUUY;
 					};
 				};
 			};
@@ -110,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				38883D841C3ED51200FA8C57 /* WirelessDetection */,
+				38883D9B1C3ED54300FA8C57 /* WirelessDetector */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +228,13 @@
 			files = (
 				38883D8D1C3ED51200FA8C57 /* Assets.xcassets in Resources */,
 				38883D901C3ED51200FA8C57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38883D9A1C3ED54300FA8C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +250,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38883D971C3ED54300FA8C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38883DAA1C3ED55D00FA8C57 /* WirelessDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38883DA21C3ED54300FA8C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38883D9B1C3ED54300FA8C57 /* WirelessDetector */;
+			targetProxy = 38883DA11C3ED54300FA8C57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38883D8E1C3ED51200FA8C57 /* Main.storyboard */ = {
@@ -234,7 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WirelessDetection/WirelessDetection.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WirelessDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.WirelessDetection;
@@ -246,11 +379,61 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WirelessDetection/WirelessDetection.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WirelessDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.WirelessDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38883DA61C3ED54300FA8C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = WirelessDetector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.WirelessDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38883DA71C3ED54300FA8C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = WirelessDetector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.WirelessDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -273,6 +456,16 @@
 				38883D961C3ED51200FA8C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38883DA51C3ED54300FA8C57 /* Build configuration list for PBXNativeTarget "WirelessDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38883DA61C3ED54300FA8C57 /* Debug */,
+				38883DA71C3ED54300FA8C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
