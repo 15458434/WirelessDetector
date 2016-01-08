@@ -15,6 +15,7 @@
 		38883DA31C3ED54300FA8C57 /* WirelessDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */; };
 		38883DA41C3ED54300FA8C57 /* WirelessDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38883D9C1C3ED54300FA8C57 /* WirelessDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38883DAA1C3ED55D00FA8C57 /* WirelessDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883DA91C3ED55D00FA8C57 /* WirelessDetector.swift */; };
+		38E1B5C41C3FD26500482238 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 38E1B5C31C3FD26500482238 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		38883D9E1C3ED54300FA8C57 /* WirelessDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirelessDetector.h; sourceTree = "<group>"; };
 		38883DA01C3ED54300FA8C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38883DA91C3ED55D00FA8C57 /* WirelessDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WirelessDetector.swift; sourceTree = "<group>"; };
+		38E1B5C31C3FD26500482238 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		38883D7C1C3ED51200FA8C57 = {
 			isa = PBXGroup;
 			children = (
+				38E1B5C31C3FD26500482238 /* README.md */,
 				38883D871C3ED51200FA8C57 /* WirelessDetection */,
 				38883D9D1C3ED54300FA8C57 /* WirelessDetector */,
 				38883D861C3ED51200FA8C57 /* Products */,
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E1B5C41C3FD26500482238 /* README.md in Sources */,
 				38883D8B1C3ED51200FA8C57 /* ViewController.swift in Sources */,
 				38883D891C3ED51200FA8C57 /* AppDelegate.swift in Sources */,
 			);
